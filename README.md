@@ -2,7 +2,7 @@
 
 This code is solely for my personal use. Please feel free to adapt it to your specific requirements. Please share if you know a better way. Thank you!
 
-##001_hello_world.sql
+## 001_hello_world.sql
 
 This is a test program to see if sqlite3 has been installed.
 
