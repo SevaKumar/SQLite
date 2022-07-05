@@ -4,3 +4,6 @@
 
 # Ignore files related to keys
 .env
+
+# Ignore the databases
+*.db

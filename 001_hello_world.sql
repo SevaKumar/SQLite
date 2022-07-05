@@ -8,4 +8,4 @@ select "Hello, World!";
 
 
 -- run macos 
--- $ sqlite3 test.db < "SQLite.sql"
+-- $ sqlite3 test.db < 001_hello_world.sql
