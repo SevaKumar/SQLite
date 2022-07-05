@@ -1,0 +1,29 @@
+#!/usr/bin/sqlite3
+
+-- Importing a CSV file
+-- Source: https://data.cms.gov/provider-data/sites/default/files/resources/092256becd267d9eeccf73bf7d16c46b_1641873938/Hospital_General_Information.csv
+
+-- 1) Download the data.
+-- $ curl -o hospital_info.csv https://data.cms.gov/provider-data/sites/default/files/resources/092256becd267d9eeccf73bf7d16c46b_1641873938/Hospital_General_Information.csv
+
+-- If the table exists, remove it.
+drop table hospital_info;
+
+-- SQLite set the mode to CSV.
+.mode csv
+-- Import the CSV file.
+.import 'hospital_info.csv' hospital_info
+-- Display the file's schema.
+.schema hospital_info
+
+-- Count the number of records based on the facility id. Column names that contain spaces must be surrounded by double quotes.
+select "---Total Record Count:";
+select count(distinct "Facility ID") as cnt from hospital_info;
+
+-- display a list of hospital identifiers in Washington State
+select "---List of facility ids:";
+select DISTINCT "Facility ID" from hospital_info where "State" = "WA";
+
+-- SeleChoose one at random and show a single hospital record.
+select "---Single record:";
+select *  from hospital_info where "Facility ID" = "500008";

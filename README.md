@@ -11,3 +11,11 @@ $ which sqlite3   #/usr/bin/sqlite3
 $ sqlite3 test.db < 001_hello_world.sql
 Hello, World!
 ```
+
+## 002_import_csv.sql
+
+This script imports a csv file containing national hospital information. This file was accessed on 7/5/2022.
+
+```Bash
+$  curl -o hospital_info.csv https://data.cms.gov/provider-data/sites/default/files/resources/092256becd267d9eeccf73bf7d16c46b_1641873938/Hospital_General_Information.csv
+```
