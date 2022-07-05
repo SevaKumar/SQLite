@@ -1,0 +1,6 @@
+# Ignore system files
+.DS_store
+.vscode
+
+# Ignore files related to keys
+.env
