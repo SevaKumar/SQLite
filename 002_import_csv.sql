@@ -27,3 +27,10 @@ select distinct "Facility ID" from hospital_info where "State" = "WA";
 -- Choose one at random and show a single hospital record.
 .print (PGM_CMT)---Single record:
 select * from hospital_info where "Facility ID" = "500008";
+
+-- Number of hospitals by state.
+.print (PGM_CMT)---Number of hospitals by state:
+select "State", count(distinct "Facility ID") as hosp_cnt 
+from hospital_info 
+group by 1 
+order by 2 desc;
