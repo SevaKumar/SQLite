@@ -17,13 +17,13 @@ drop table hospital_info;
 .schema hospital_info
 
 -- Count the number of records based on the facility id. Column names that contain spaces must be surrounded by double quotes.
-select "---Total Record Count:";
+.print (PGM_CMT)---Total Record Count:
 select count(distinct "Facility ID") as cnt from hospital_info;
 
 -- display a list of hospital identifiers in Washington State
-select "---List of facility ids:";
-select DISTINCT "Facility ID" from hospital_info where "State" = "WA";
+.print (PGM_CMT)---List of facility ids:
+select distinct "Facility ID" from hospital_info where "State" = "WA";
+-- Choose one at random and show a single hospital record.
 
--- SeleChoose one at random and show a single hospital record.
-select "---Single record:";
-select *  from hospital_info where "Facility ID" = "500008";
+.print (PGM_CMT)---Single record:
+select * from hospital_info where "Facility ID" = "500008";
