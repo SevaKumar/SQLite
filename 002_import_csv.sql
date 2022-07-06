@@ -23,7 +23,7 @@ select count(distinct "Facility ID") as cnt from hospital_info;
 -- display a list of hospital identifiers in Washington State
 .print (PGM_CMT)---List of facility ids:
 select distinct "Facility ID" from hospital_info where "State" = "WA";
--- Choose one at random and show a single hospital record.
 
+-- Choose one at random and show a single hospital record.
 .print (PGM_CMT)---Single record:
 select * from hospital_info where "Facility ID" = "500008";
