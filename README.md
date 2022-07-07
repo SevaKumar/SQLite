@@ -12,10 +12,11 @@ $ sqlite3 test.db < 001_hello_world.sql
 Hello, World!
 ```
 
-## 002_import_csv.sql
+## 002_import_export_csv.sql
 
-This script imports a csv file containing national hospital information. This file was accessed on 7/5/2022.
+This script imports a csv file containing information about all hospitals in the United States. Summarize the data by tallying the number of hospitals in each state. Export the summary to a CSV file. 
 
 ```Bash
+# This file was accessed on 7/5/2022.
 $  curl -o hospital_info.csv https://data.cms.gov/provider-data/sites/default/files/resources/092256becd267d9eeccf73bf7d16c46b_1641873938/Hospital_General_Information.csv
 ```
