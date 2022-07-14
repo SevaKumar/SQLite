@@ -19,7 +19,7 @@ This is a test program to see if sqlite3 has been installed.
 ```Bash
 $ which sqlite3   #/usr/bin/sqlite3
 $ sqlite3 test.db < 001_hello_world.sql
-Hello, World!
+Hello, World! Current Sqlite Version: 3.37.0
 ```
 
 ## 002_import_export_csv.sql
