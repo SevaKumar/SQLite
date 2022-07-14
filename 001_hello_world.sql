@@ -3,9 +3,10 @@
 --SQLite
 select "Hello, World!" || ' Current Sqlite Version: ' || sqlite_version();
 
---output
--->Hello, World!
-
 
 -- run macos 
 -- $ sqlite3 test.db < 001_hello_world.sql
+
+
+--output
+-->Hello, World! Current Sqlite Version: 3.37.0
