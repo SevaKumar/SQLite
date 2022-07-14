@@ -1,7 +1,7 @@
 #!/usr/bin/sqlite3
 
 --SQLite
-select "Hello, World!";
+select "Hello, World!" || ' Current Sqlite Version: ' || sqlite_version();
 
 --output
 -->Hello, World!
