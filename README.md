@@ -4,13 +4,23 @@ This code is solely for my personal use. Please feel free to adapt it to your sp
 
 ## 001_hello_world.sql
 
+If you need to install sqlite, feel free to use any method you prefer. Installing sqlite can be found by searching the web. I used Homebrew.
+
+
+```Bash
+# https://formulae.brew.sh/formula/sqlite
+
+brew install sqlite
+```
+
 This is a test program to see if sqlite3 has been installed.
+
 
 ```Bash
 $ which sqlite3   #/usr/bin/sqlite3
 $ sqlite3 test.db < 001_hello_world.sql
 Hello, World!
-```
+
 
 ## 002_import_export_csv.sql
 

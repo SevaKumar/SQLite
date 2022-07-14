@@ -13,7 +13,6 @@
 .mode csv
 
 -- Import the CSV file.
-
 .import 'hospital_info.csv' hospital_info
 
 -- Display the file's schema.
