@@ -11,3 +11,4 @@
 # Ignore data folders
 data
 *.csv
+blog

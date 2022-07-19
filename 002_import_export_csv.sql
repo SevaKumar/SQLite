@@ -6,8 +6,15 @@
 -- 1) Download the data.
 -- $ curl -o hospital_info.csv https://data.cms.gov/provider-data/sites/default/files/resources/092256becd267d9eeccf73bf7d16c46b_1641873938/Hospital_General_Information.csv
 -- If the table exists, remove it.
-drop table hospital_info;
 
+--Sqlite Hello
+.print \n(PGM_CMT #1) ---Show the version of SQLite and the local date and time:
+select
+   'Hello! ' || 'Current Sqlite Version: ' || sqlite_version() || '; Current Local Date and Time: ' || datetime('now','localtime');
+
+
+.print \n(PGM_CMT #2) ---Import the CSV file:
+drop table hospital_info;
 -- SQLite set the mode to CSV.
 .mode csv 
 -- Import the CSV file.
@@ -19,7 +26,7 @@ drop table hospital_info;
 -- -----
 -- Count the number of records based on the facility id. 
 -- Column names that contain spaces must be surrounded by double quotes.
-.print (PGM_CMT) ---Total Record Count:
+.print \n(PGM_CMT #3) ---Total Record Count:
 select
     count(distinct "Facility ID") as cnt
 from
@@ -28,31 +35,52 @@ from
 
 -- -----
 -- display a list of hospital identifiers in Washington State
-.print (PGM_CMT) ---List of facility ids:
+.print \n(PGM_CMT #4) ---List of facility ids in WA:
 select
     distinct "Facility ID"
 from
     hospital_info
 where
     "State" = "WA";
+
 -- -----
 
 
 -- -----
 -- Choose one at random and show a single hospital record.
-.print (PGM_CMT) ---Single record:
+.print \n(PGM_CMT #5) ---Single random hospital record:
+select
+    *
+from
+    hospital_info
+where
+    "Facility ID" IN (
+        SELECT
+            "Facility ID"
+        FROM
+            hospital_info
+        ORDER BY
+            RANDOM()
+        LIMIT
+            1
+    );
+
+
+
+.print \n(PGM_CMT #6) ---Output of single records 500008:
 select
     *
 from
     hospital_info
 where
     "Facility ID" = "500008";
+
 -- -----
 
 
 -- -----
 -- Number of hospitals by state.
-.print (PGM_CMT) ---Number of hospitals by state:
+.print \n(PGM_CMT #7) ---Number of hospitals by state:
 select
     "State",
     count(distinct "Facility ID") as hosp_cnt
@@ -67,8 +95,8 @@ order by
 
 -- -----
 -- Export a CSV file.
-.print (PGM_CMT) ---Export result to a CSV: see file hosp_cnt_state.csv
-.headers on 
+.print \n(PGM_CMT #8) ---Export result to a CSV: see file hosp_cnt_state.csv
+.headers on
 .mode csv
 .output hosp_cnt_state.csv
 
@@ -82,15 +110,5 @@ group by
 order by
     2 desc;
 
-.quit
--- --------------------------------------------------
-
-
--- --------------------------------------------------
--- run macos 
--- $ sqlite3 test.db < 002_import_export_csv.sql
-
--- -----
---output
---CSV file: hosp_cnt_state.csv
+.quit 
 -- --------------------------------------------------
