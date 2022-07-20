@@ -55,14 +55,14 @@ select
 from
     hospital_info
 where
-    "Facility ID" IN (
-        SELECT
+    "Facility ID" in (
+        select
             "Facility ID"
-        FROM
+        from
             hospital_info
-        ORDER BY
+        order by
             RANDOM()
-        LIMIT
+        limit
             1
     );
 

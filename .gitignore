@@ -12,6 +12,5 @@
 data
 
 *.csv
-blog_md
-001_hello_world.md
+002_import_export_csv.sql
 002_import_export_csv.md
