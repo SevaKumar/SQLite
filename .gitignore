@@ -10,6 +10,8 @@
 
 # Ignore data folders
 data
+
 *.csv
-blog
-002_import_export_csv*
+blog_md
+001_hello_world.md
+002_import_export_csv.md

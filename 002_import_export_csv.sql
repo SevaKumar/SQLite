@@ -1,6 +1,7 @@
 #!/usr/bin/sqlite3
 
 -- --------------------------------------------------
+-- Read Blog: 
 -- Importing a CSV file
 -- Source: https://data.cms.gov/provider-data/sites/default/files/resources/092256becd267d9eeccf73bf7d16c46b_1641873938/Hospital_General_Information.csv
 -- 1) Download the data.
