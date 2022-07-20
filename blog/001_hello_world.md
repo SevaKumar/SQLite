@@ -3,7 +3,7 @@
 This is a test program to see if your computer has sqlite3 installed. If you don't have sqlite3 on your computer, please follow the steps below to install it.
 
 
-You can find the 001_hello_world program [here](https://github.com/SevaKumar/SQLite/blob/147e0310bc6405af7dd570231f3d33fac4d70494/001_hello_world.sql).
+You can find the 001_hello_world program [here](https://github.com/SevaKumar/SQLite/blob/147e0310bc6405af7dd570231f3d33fac4d70494/001_hello_world.sql). Type the following command into the terminal window. The output will show the location of sqlite3.
 
 
 ```Bash
@@ -38,4 +38,9 @@ This documentation shows you the Homebrew formula for [sqlite](https://formulae.
 
 ```Bash
 brew install sqlite   
+```
+
+Test code
+```
+Some more testing testing!
 ```

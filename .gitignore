@@ -11,4 +11,5 @@
 # Ignore data folders
 data
 *.csv
+blog
 002_import_export_csv*
