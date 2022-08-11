@@ -4,13 +4,13 @@ This code is only for my own use. Please feel free to change it to fit your own 
 
 Since there is a lot to say about each script, I created a blog post for each file.
 
-## Install Sqlite [Read Blog Details]()
+## Install Sqlite Read Blog Details
 
-Please look at the 001_hello_world blog for instructions. 
+Please look at the 001_hello_world [blog](https://sevakumar.blogspot.com/2022/08/how-to-get-sqlite-database-running-in.html) for instructions. 
 
 ## 001_hello_world.sql
 
-Please look at the 001_hello_world blog for instructions. [Blog]()
+Please look at the 001_hello_world blog for instructions. [Blog](https://sevakumar.blogspot.com/2022/08/how-to-get-sqlite-database-running-in.html)
 
 ## 002_import_export_csv.sql
 

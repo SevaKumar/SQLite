@@ -8,6 +8,7 @@
 # Ignore the databases and files
 *.db
 *.csv
+*.html
 
 # Ignore data folders
 blog
