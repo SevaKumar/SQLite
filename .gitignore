@@ -1,0 +1,16 @@
+# Ignore system files
+.DS_store
+.vscode
+
+# Ignore files related to keys
+.env
+
+# Ignore the databases and files
+*.db
+*.csv
+
+# Ignore data folders
+blog
+
+# code ignore.
+code/002*
