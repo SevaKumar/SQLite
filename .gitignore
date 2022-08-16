@@ -6,12 +6,13 @@
 .env
 
 # Ignore the databases and files
-*.db
-*.csv
-*.html
+db/*.db
 
-# Ignore data folders
+
+# Ignore folders
 blog
+blog/*.html
+blog/*.md
 
-# code ignore.
-code/002*
+# folder ignore.
+output/hosp_cnt*
