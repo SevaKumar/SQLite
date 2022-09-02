@@ -15,3 +15,8 @@ Please look at the 001_hello_world blog for instructions. [Blog](https://sevakum
 ## 002_import_export_csv.sql
 
 This script imports a csv file containing information about all hospitals in the United States. Summarize the data by tallying the number of hospitals in each state. Export the summary to a CSV file. [Blog](https://sevakumar.blogspot.com/2022/08/the-sqlite-import-and-export-process.html)
+
+
+## 003_json_load.sql
+
+This script imports live JSON data from the Census Bureau into the sqlite database. More importantly, it shows the steps taken to solve an unexpected problem. [Blog]()

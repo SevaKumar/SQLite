@@ -10,6 +10,8 @@ db/*.db
 
 
 # Ignore folders
+lib
+lib/*.dylib
 blog
 blog/*.html
 blog/*.md
